@@ -27,6 +27,7 @@ class LangchangeEventHandler
      */
     public function handle(LangChanged $event)
     {
+        return dd('Got it');
         Cache::flush();
         Cache::save();
     }

@@ -11,9 +11,6 @@
                     <div class="col-md-6">
                         <div class="tb-menu">
                             <a href="{{route('lang.change' , 'ar')}}">العربية</a>
-                            @if(app()->getLocale() =='ar')
-                                سسسسسس
-                            @endif
                             <a href="{{route('lang.change' , 'en')}}">ENGLISH</a>
                         </div>
                     </div>

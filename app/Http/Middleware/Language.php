@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\Events\LangChanged;
 use Closure;
 use Illuminate\Http\Request;
 
@@ -17,7 +18,11 @@ class Language
     public function handle(Request $request, Closure $next)
     {
         if(session()->has('lang'))
+        {
             app()->setLocale(session()->get('lang'));
+            LangChanged::dispatch();
+            session()->forget('lang');
+        }
         return $next($request);
     }
 }

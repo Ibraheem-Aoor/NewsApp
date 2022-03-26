@@ -10,7 +10,6 @@ class LangController extends Controller
     public function ChangeLang($lang)
     {
         session()->put('lang' , $lang);
-        LangChanged::dispatch();
         return redirect(route('home'));
     }//end method
 

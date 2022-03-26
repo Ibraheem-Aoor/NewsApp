@@ -6,7 +6,7 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="News - world wide news - Latest News" name="keywords">
         <meta content="Latest News and trends from all categories in one site." name="description">
-
+        <link rel="icon" href="{{asset('assets/img/logo.png')}}">
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
 
