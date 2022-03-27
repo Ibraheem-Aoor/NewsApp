@@ -23,7 +23,7 @@
 
               <div class="col-lg-3">
                   <div class="mn-list">
-                      <h2>Read More</h2>
+                      <h2>{{__('home.more')}}</h2>
                       <ul>
                           @for ($i = 1; $i < 6; $i++)
                               @php

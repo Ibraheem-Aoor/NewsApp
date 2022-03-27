@@ -21,7 +21,6 @@ class Language
         {
             app()->setLocale(session()->get('lang'));
             LangChanged::dispatch();
-            session()->forget('lang');
         }
         return $next($request);
     }

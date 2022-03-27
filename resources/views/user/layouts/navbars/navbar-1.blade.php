@@ -10,16 +10,19 @@
               <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                   <div class="navbar-nav mr-auto">
                       <a href="/"
-                          class="nav-item nav-link {{ Route::CurrentRouteName() == 'home' ? 'active' : '' }}">{{__('home.home')}}</a>
+                          class="nav-item nav-link {{ Route::CurrentRouteName() == 'home' ? 'active' : '' }}">{{ __('home.home') }}</a>
                       <div class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">{{ __('home.news') }}</a>
                           <div class="dropdown-menu">
-                              <a href="#" class="dropdown-item">Sub Item 1</a>
-                              <a href="#" class="dropdown-item">Sub Item 2</a>
+                              <a href="{{route('articles.all' , 'Entertainment')}}" class="dropdown-item">{{__('home.Entertainment')}}</a>
+                              <a href="{{route('articles.all' , 'Sport')}}" class="dropdown-item">{{__('home.Sport')}}</a>
+                              <a href="{{route('articles.all' , 'Technology')}}" class="dropdown-item">{{__('home.Technology')}}</a>
+                              <a href="{{route('articles.all' , 'Business')}}" class="dropdown-item">{{__('home.Business')}}</a>
+                              <a href="{{route('articles.all' , 'Science')}}" class="dropdown-item">{{__('home.Science')}}</a>
+                              <a href="{{route('articles.all' , 'Health')}}" class="dropdown-item">{{__('home.Health')}}</a>
                           </div>
                       </div>
-                      <a href="single-page.html" class="nav-item nav-link">Single Page</a>
-                      <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                      <a href="{{ route('contact') }}" class="nav-item nav-link">{{ __('home.contact') }}</a>
                   </div>
                   <div class="social ml-auto">
                       <a href=""><i class="fab fa-twitter"></i></a>
