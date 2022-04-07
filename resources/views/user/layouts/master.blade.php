@@ -41,7 +41,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <script src="{{asset('assets/lib/easing/easing.min.js')}}"></script>
         <script src="{{asset('assets/lib/slick/slick.min.js')}}"></script>
-
+        @stack('js')
         <!-- Template Javascript -->
         <script src="{{asset('assets/js/main.js')}}"></script>
     </body>

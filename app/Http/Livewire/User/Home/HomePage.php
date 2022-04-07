@@ -16,7 +16,7 @@ class HomePage extends Component
     {
         if(Cache::has('top_general_headlines'))
         {
-            $this->render();
+            return $this->render();
         }
         else
         {
